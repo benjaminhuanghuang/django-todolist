@@ -8,10 +8,8 @@
 <body>
     <h1>Todo List</h1>
     <hr>
-    <ul>
-        {% for t in todos %}
-            <li><a href="/todos/details/{{t.id}}">{{t.title}}</a>: {{t.text}}</li>
-        {% endfor%}
-    </ul>
+    <h1>{{todo.title}}</h1>
+    <p>{{todo.text}}</p>
 </body>
 </html>
+ 

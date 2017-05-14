@@ -17,3 +17,12 @@ def index(request):
     }
     # return HttpResponse('Hello')
     return render(request, 'index.html', context)
+
+def details(request, todo_id):
+    todo = Todo.objects.get(id=todo_id)
+
+    context = {
+        'todo': todo
+    }
+    # return HttpResponse('Hello')
+    return render(request, 'detail.html', context)
