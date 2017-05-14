@@ -7,10 +7,11 @@
 ## View
     from django.shortcuts import render
     from django.http import HttpResponse
-    
+
 ### Create template
     <app>\templates
 
+### Partial page
 
 ## Add Models and table
 ### Create model    
